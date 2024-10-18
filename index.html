@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <p >"sorting the array in ascending order"></p>
+    <script>
+      number = [1, 50, 100, 20, 500, 10, 75];
+      ascen = number.sort((x, y) => x - y);
+      <p>" Sorting the array in descending order" </p>
+      document.write(ascen);
+      desen = number.sort((x,y) =>y-x);
+    </script>
+    <p> By using the normal method of sorting we are able to sort the array by alphabetical order in numbers</p>
+    <script>
+        const months = ["Jan", "Feb", "Mar", "Apr"];
+        const sorted = months.toSorted();
+document.write(sorted)
+ const reversed = months.toReversed();
+  document.write(reversed)
+    </script>
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(){return 0.5 - Math.random()});
+
+document.write(points)
+    </script>
+    <!-- comparison method-->
+     <!-- lower point -->
+      <p id="demo"></p>
+    <script>
+        const point = [40, 100, 1, 5, 25, 10];
+        point.sort((a, b)=>(a-b));
+        document.getElementById("demo").innerHTML = point[1]
+        </script>
+        <!-- higher point -->
+         <p id="demo1"></p>
+        <script>
+            const pointh = [40, 100, 1, 5, 25, 10];
+            pointh.sort((a, b)=>( b-a));
+            document.getElementById("demo1").innerHTML = pointh[0];
+            </script>
+            <script>
+                const arrmin=[40, 100, 1, 5, 25, 10];
+                Math.min.apply((arr)=>(null,arr))
+                document.write(myArrayMin(arrmin));
+
+            </script>
+            
+    <script src="index.js"></script>
+  </body>
+</html>
